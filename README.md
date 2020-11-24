@@ -1,4 +1,4 @@
-# Sample Portfolio
+# Single Page Portfolio
 
 This is just a practice project.
 
