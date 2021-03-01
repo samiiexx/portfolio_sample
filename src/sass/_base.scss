@@ -1,0 +1,187 @@
+:root {
+    font-size: 16px;
+}
+
+body {
+    color: $white;
+    font-family: 'Lato', sans-serif;  
+    line-height: 1.5;
+    font-family: $font-family;
+    font-weight: $font-normal;
+}
+
+header {
+    width: 100%;
+    // height: 100vh;
+    background-color: $primary;
+}
+
+.logo {
+    position: fixed;
+    @include media-max("md"){
+        top: 1%;
+    }
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+}
+
+nav ul {
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    transition: $fast;
+    @include media-max("md"){
+        max-height: 0;
+    }
+}
+
+nav.sticky ul {
+    width: 100%;
+    background: darken($secondary, 15%);
+    top: 0;
+
+}
+
+nav ul li {
+    display: inline-block;
+    @include media-max("md"){
+        box-sizing: border-box;
+        width: 100%;
+
+    }
+}
+
+.menu-icon {
+    width: 100%;
+    background: $primary;
+    text-align: right;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: none;
+     .fa-times {
+        display: none;
+    }
+    @include media-max("md"){
+        display: block;
+    }
+}
+
+.menu-open .menu-icon .fa-times {
+@include media-max("md"){
+    display: block;
+}
+}
+
+.menu-open .menu-icon .fa-bars {
+    @include media-max("md"){
+        display: none;
+    }
+}
+
+.menu-open ul {
+    @include media-max("md"){
+        padding-left: 0;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.showing {
+    max-height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+}
+// end Navigation
+
+h1 {
+    font-size: 4rem;
+}
+
+h1,
+h2 {
+    font-family: 'Caveat', cursive;
+    margin: 0;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.hero {
+    @include flex(center);
+    flex-direction: column;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+.divider {
+    border-bottom: 1px dashed $dark;
+    padding: 1.3rem 0;
+}
+
+.divider:last-of-type {
+    border-bottom: none;
+}
+
+
+/*CERTIFICATIONS*/
+
+.certification {
+    background-color: $secondary;
+}
+
+
+/*WORK EXPERIENCE*/
+
+.work-experience {
+    background-color: $tertiary-color;
+}
+
+
+/*EDUCATION*/
+
+.education {
+    background-color: $secondary;
+    padding: 4rem 0;
+}
+
+.education p {
+    width: 60%;
+}
+
+
+/*KEEP IN TOUCH*/
+
+.footer {
+    background-color: $tertiary-color;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    & a {
+        text-decoration: none;
+        color: $white;
+        padding: 0.2rem 0.5rem;
+        &:hover {
+            border-bottom: 5px solid $primary;
+        }
+    }
+    .social-icon {
+        color: $dark;
+    }
+}

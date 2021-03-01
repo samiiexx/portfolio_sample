@@ -4,24 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="logo_2.png" type="image/png">
+    <link rel="shortcut icon" href="logo.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c867eaa577.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Amara/Frontend Dev</title>
 </head>
 
 <body>
     <main>
 
-        <header>
+        <header class="header js-header">
+            <nav class="nav py-1">
+             
+                <div class="menu-icon pr-2">
+                    <i class="fas fa-bars fa-2x"></i>
+                    <i class="fas fa-times fa-2x"></i>
+                </div>
+             
+                <div class="logo p-1">Logo</div>
+
+                <div class="menu">
+                    <ul class="nav-list">
+                        <li class="nav-item p-1"><a href="#home" class="nav-link">Home</a></li>
+                        <li class="nav-item p-1"><a href="#certification" class="nav-link">Certification</a></li>
+                        <li class="nav-item p-1"><a href="#work" class="nav-link">Work Experience</a></li>
+                        <li class="nav-item p-1"><a href="#education" class="nav-link">Education</a></li>
+                        <li class="nav-item p-1"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
             <div class="content-wrap">
-                <h1>Amara</h1>
-                <h2>Frontend Developer</h2>
-                <p>
-                    Add a summary of my profile here. Strong irish pumpkin spice robust variety, qui dark chicory espresso café au lait medium. Cortado aged, single origin kopi-luwak, blue mountain seasonal, skinny qui dark viennese breve. Grounds shop aftertaste so, bar,
-                    cultivar french press barista espresso saucer. Cinnamon, ristretto, so strong, steamed lungo bar wings that dripper. Ristretto wings, to go café au lait roast aroma to go.
-                </p>
+                <div class="hero py-5">
+                    <h1>Amara</h1>
+                    <h2>Frontend Developer</h2>
+                    <p>
+                        Add a summary of my profile here. Strong irish pumpkin spice robust variety, qui dark chicory espresso café au lait medium. Cortado aged, single origin kopi-luwak, blue mountain seasonal, skinny qui dark viennese breve. Grounds shop aftertaste so, bar,
+                        cultivar french press barista espresso saucer. Cinnamon, ristretto, so strong, steamed lungo bar wings that dripper. Ristretto wings, to go café au lait roast aroma to go.
+                    </p>
+                </div>
             </div>
         </header>
         <!-- end Personal Profile -->
@@ -143,6 +165,7 @@
             </div>
         </footer>
     </main>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
